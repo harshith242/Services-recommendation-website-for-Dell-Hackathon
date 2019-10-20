@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<link href="{% static 'css/style.css'%}" rel="stylesheet">
+</head>
+<style>
+header{
+	color: black;
+	height: 100vh;
+	background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("{% static 'images/background.jpg' %}"),no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+</style>
+
+<body>
+	<header>
+		
+			<div class="main">
+				<div class="logo">
+			</div>
+			<ul>
+				<li class="active"><a href="{% url 'home'%}">Home</a></li>
+				<li><a href="{% url 'about'%}">About</a></li>
+				<li><a href="{% url 'contact' %}">Contact Us</a></li>
+			</ul>
+		</div>
+
+		<div class="title">
+			<h1>Dell Services</h1>
+		</div>
+
+		<div class="button">
+			<a href="{% url 'customer'%}" class="btn">Customer</a>
+			<a href="{% url 'administrator' %}" class="btn">Admin</a>
+		</div>
+	</header>
+</body>

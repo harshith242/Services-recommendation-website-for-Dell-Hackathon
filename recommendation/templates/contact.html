@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Us</title>
+	<link href="{% static 'css/style_contact.css'%}" rel="stylesheet">
+</head>
+<style>
+header{
+	color: black;
+	height: 100vh;
+	background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("{% static 'images/background.jpg' %}"),no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+</style>
+
+<body>
+	<header>
+		<div class="main">
+			<div class="logo">
+				<!--<img src="{% static 'images/logo.png' %}">-->
+			</div>
+
+			<ul>
+				<li><a href="{% url 'home' %}">Home</a></li>
+				<li><a href="{% url 'about' %}">About</a></li>
+				<li class="active"><a href="{% url 'contact' %}">Contact Us</a></li>
+			</ul>
+
+			<div class="title">
+				<h1>Contact Us</h1>
+			</div>
+
+			<p id="para">Need help? We're here for you.</p>
+
+			<p id="num">Call-1800-425-4002 / 080-2510-8001</p>
+		</div>
+	</header>
+</body>

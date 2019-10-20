@@ -1,0 +1,26 @@
+*{
+	margin:0;
+	padding: 0;
+	font-family: Century Gothic;
+}
+
+ul{
+	color: black;
+	list-style-type: none;
+	float: right;
+	margin-top: 25px;
+	margin-right: 30px; 
+}
+
+.details{
+	position: absolute;
+	top: 20%;
+	left: 20%;
+}
+
+.details p{
+	color: #EEEEEE;
+	padding: 30px;
+	font-size: 20px;
+	font-weight: bold;
+}

@@ -1,0 +1,148 @@
+*{
+	margin:0;
+	padding: 0;
+	font-family: Century Gothic;
+}
+
+.logo img{
+	float: left;
+	padding-top: 30px;
+	padding-left: 60px;
+	width: 100px;
+	height: auto;
+}
+
+#rid{
+	position: absolute;
+	top:10%;
+	left: 45%;
+	transform: translate(-50%,-50%);
+	font-size: 25px;
+	font-weight: bold;
+	color: #EEEEEE;
+}
+
+#rnum{
+	position: absolute;
+	top:10%;
+	left: 62%;
+	border: black;
+	transform: translate(-50%,-50%);
+	padding:30px 10px;
+}
+
+.textbox{
+	width: 100%;
+	overflow: hidden;
+	font-size: 20px;
+	padding: 10px;
+
+}
+
+.textbox i{
+	width: 26px;
+	float: left;
+
+}
+
+.textbox input{
+	border:1px solid;
+	outline: none;
+	background: white;
+	color:black;
+	font-size: 20px;
+	width: 80%;
+	float: left;
+
+}
+
+.title{
+	position: absolute;
+	top: 10%;
+	left: 20%;
+	transform: translate(-50%,-50%);
+}
+
+.title h1{
+	color:#EEEEEE;
+	font-size: 40px;
+}
+
+.button {
+	position: absolute;
+	top:15%;
+	left: 47%;
+  	background-color: transparent;
+  	border: none;
+  	color: #EEEEEE;
+  	padding: 10px;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	font-size: 30px;
+  	cursor: pointer;
+	transition: 0s ease;
+}
+
+.button:hover{
+	background-color: black;
+	color: #fff;
+}
+
+.data{
+	position: absolute;
+	top:25%;
+	left: 5%;
+}
+
+.row1 td{
+	text-align: center;
+	padding:10px; 
+	font-size:20px;
+	font-weight: bold;
+	color: #EEEEEE;
+	width: 200px;
+	border: 1px solid #EEEEEE;
+}
+
+.row2 td{
+	text-align: center;
+	padding: 10px;
+	font-size: 20px;
+	color: #EEEEEE;
+	width: 30px;
+}
+
+#anti{
+	color: #EEEEEE;
+	position: absolute;
+	top:45%;
+	left: 10%;
+	font-weight: bold;
+	font-size: 25px;
+}
+
+.antivirus-1{
+	color:#EEEEEE;
+	position: absolute;
+	top:52%;
+	left:10%;
+	font-size: 20px;
+}
+
+
+.antivirus-2{
+	color:#EEEEEE;
+	position: absolute;
+	top:52%;
+	font-size: 20px;
+	left:20%;
+}
+
+.antivirus-3{
+	color:#EEEEEE;
+	position: absolute;
+	top:52%;
+	font-size: 20px;
+	left:30%;
+}

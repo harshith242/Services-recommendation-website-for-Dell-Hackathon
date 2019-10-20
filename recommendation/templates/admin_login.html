@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin page</title>
+	<link href="{% static 'css/style_admin_login.css'%}" rel="stylesheet">
+</head>
+<style>
+header{
+	color: black;
+	height: 100vh;
+	background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("{% static 'images/background.jpg' %}"),no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+</style>
+<body>
+	<header>
+		<div class="details">
+			<p>Conversion rate:</p>
+			<p>Revenue Impact:</p>
+		</div>
+	</header>
+</body>
+</html>

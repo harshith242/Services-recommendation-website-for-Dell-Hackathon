@@ -1,0 +1,112 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Customer</title>
+	<link href="{% static 'css/style_customer.css'%}" rel="stylesheet">
+
+	<style>
+	header{
+		color: black;
+		height: 100vh;
+		background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("{% static 'images/background.jpg' %}"),no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+
+	::placeholder{
+		color: #EEEEEE;
+		opacity: 1;
+		font-size: 20px;
+		font-weight: normal;
+		size: 30px;
+		
+	}
+	</style>
+
+</head>
+
+<body>
+	<header>
+		<div class="main">
+			<div class="logo">
+				<!--<img src="{% static 'images/logo.png' %}">-->
+			</div>
+
+			<div class="title">
+				<h1>Customer</h1>
+			</div>
+
+			<form method="GET">
+				<table>
+					<tr>
+						<td id="rid">
+							Service Tag:
+						</td>
+						<td id="rnum">
+							<div class="textbox">
+								<i class="fas fa-lock"></i>
+								<input type="text"  size="30" autocomplete=off name="ref_id">		
+							</div>
+							
+							<!--<input type="text" size="30" placeholder="Service Tag" autocomplete=off name="ref_id"-->
+						</td>
+					</tr>
+					<input type="submit" class="button" value="Submit">	
+				</table>
+			</form><br/>
+			<br/>
+			{% if result.anti %}
+				<p id="anti">Recommended Anti virus</p>
+			{% endif %}
+			{% for x in result.anti %}
+				<div class="antivirus-{{forloop.counter}}">{{x}}</div>
+			{% endfor %}
+			
+			<form>
+				<table class="data">
+					<tr class="row1">
+						<td>
+							ID
+						</td>
+						<td>
+							Antivirus version
+						</td>
+						<td>
+							Antivirus Expiry Date
+						</td>
+						<td>
+							Office Expiry Date
+						</td>
+						<td>
+							In Home Hardware Service Expiry Date
+						</td>
+						<td>
+							Warranty Expiry Date
+						</td>
+					</tr>
+					<tr class="row2">
+						<td>
+							{{ object.customer_id}}
+						</td>
+						<td>
+							{{ object.antivirus_version}}
+						</td>
+						<td>
+							{{ object.antivirus_expiry_date}}
+						</td>
+						<td>
+							{{ object.office_expiry_date}}
+						</td>
+						<td>
+							{{ object.in_home_hardware_service_expiry_date}}
+						</td>
+						<td>
+							{{ object.warranty_expiry_date}}
+						</td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</header>
+</body>
