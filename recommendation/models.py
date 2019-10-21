@@ -10,7 +10,10 @@ class Customer(models.Model):
 	office_expiry_date=models.DateField(default=date.today)
 	in_home_hardware_service_expiry_date=models.DateField(default=date.today)
 	warranty_expiry_date=models.DateField(default=date.today)
-
+	office_data=models.CharField(max_length=30,default=None)
+	sys_model=models.CharField(max_length=30,default=None)
+	purchase_data=models.DateField(default=date.today)
+	
 	def get_absolute_url(self):
 		return reverse('customer-detail',args=[str(self.id)])
 
